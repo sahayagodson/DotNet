@@ -4,7 +4,7 @@ RUN mkdir /app
 WORKDIR /app
 
 #copy the csproj file and restore any dependecies (via NUGET)
-COPY DotNET\Tailspin.SpaceGame.Web\Tailspin.SpaceGame.Web.csproj
+COPY Tailspin.SpaceGame.Web.Tests\Tailspin.SpaceGame.Web.Tests.csproj
 RUN dotnet restore
 
 
